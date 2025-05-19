@@ -1,18 +1,20 @@
-{
+{ "homepage": "https://jemsAdd.github.io/Netflix_2025",
   "name": "netflix-2025",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
+    "predeploy":"npm run build",
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+     "deploy": "vite build && gh-pages -d dist"
   },
   "dependencies": {
     "@emotion/react": "^11.14.0",
     "@emotion/styled": "^11.14.0",
-    "@mui/icons-material": "^7.1.0",
+    "@mui/material": "^7.1.0",
     "axios": "^1.9.0",
     "movie-trailer": "^3.2.2",
     "react": "^19.1.0",
